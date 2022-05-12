@@ -35,3 +35,35 @@ for(i=0;i<j;i++)
 printf("\n%s",fname[i]);
 }
 
+/*
+
+Enter the directory name:GCTC
+
+Enter the number of files:3
+Enter file name to be created:CSE
+
+Do you want to enter another file(yes - 1 or no - 0):1
+Enter file name to be created:EA
+
+Do you want to enter another file(yes - 1 or no - 0):1
+Enter file name to be created:EA
+
+There is already EA
+
+Do you want to enter another file(yes - 1 or no - 0):1
+Enter file name to be created:B.pharm
+
+Do you want to enter another file(yes - 1 or no - 0):0
+
+Directory name is:GCTC
+
+Files names are:
+CSE
+EA
+B.pharm
+--------------------------------
+Process exited after 71.03 seconds with return value 0
+Press any key to continue . . .
+
+
+*/
