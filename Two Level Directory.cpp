@@ -49,3 +49,36 @@ int main()
 		  printf("\n");
 	 }
 }
+
+/*
+
+
+Enter number of directories:1
+
+Enter directory 1 names:GCTC
+enter size of directories:2
+
+Enter subdirectory name and size:B.Tech 2
+
+Enter file name:CSE
+
+Enter file name:CSE-EA
+
+Enter subdirectory name and size:pharmacy 2
+
+Enter file name:B_pharm
+
+Enter file name:D_pharm
+
+dirname         size    subdirname      size    files
+******************************************************
+GCTC            2       B.Tech          2       CSE     CSE-EA
+                        pharmacy        2       B_pharm D_pharm
+
+
+--------------------------------
+Process exited after 37.68 seconds with return value 0
+Press any key to continue . . .
+
+
+*/
