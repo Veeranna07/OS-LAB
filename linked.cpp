@@ -3,39 +3,44 @@
 #include<stdlib.h>
 int main()
 {
-int f[50], p,i, st, len, j, c, k, a;
+int f[50], index[50],i, n, st, len, j, c, k, ind,count=0;
 for(i=0;i<50;i++)
 f[i]=0;
-printf("\nEnter how many blocks already allocated: ");
-scanf("%d",&p);
-printf("Enter blocks already allocated: \n");
-for(i=0;i<p;i++)
+x:printf("\nEnter the index block: ");
+scanf("%d",&ind);
+if(f[ind]!=1)
 {
-scanf("%d",&a);
-f[a]=1;
-}
-x: printf("Enter index starting block and length: \n");
-scanf("%d%d", &st,&len);
-k=len;
-if(f[st]==0)
-{
-for(j=st;j<(st+k);j++)
-{
-if(f[j]==0)
-{
-f[j]=1;
-printf("%d ------->%d\n",j,f[j]);
+printf("\nEnter no of blocks needed and no of files for the index %d on the disk : \n", ind);
+scanf("%d",&n);
 }
 else
 {
-printf("\n\t%d Block is already allocated \n",j);
-k++;
+printf("\t%d index is already allocated \n",ind);
+goto x;
 }
+y: count=0;
+for(i=0;i<n;i++)
+{
+scanf("%d", &index[i]);
+if(f[index[i]]==0)
+count++;
 }
+if(count==n)
+{
+for(j=0;j<n;j++)
+f[index[j]]=1;
+printf("\tAllocated\n");
+printf("File Indexed\n");
+for(k=0;k<n;k++)
+printf("%d ------->%d : %d\n",ind,index[k],f[index[k]]);
 }
 else
-printf("\n\t%d starting block is already allocated \n",st);
-printf("\n\nDo you want to enter more file(Yes - 1/No - 0)");
+{
+printf("\tFile in the index is already allocated \n");
+printf("\nEnter another file indexed : ");
+goto y;
+}
+printf("\nDo you want to enter more file(Yes - 1/No - 0)");
 scanf("%d", &c);
 if(c==1)
 goto x;
