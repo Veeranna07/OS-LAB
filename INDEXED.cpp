@@ -48,3 +48,42 @@ else
 exit(0);
 getch();
 }
+
+/*
+
+
+Enter the index block: 1
+
+Enter no of blocks needed and no of files for the index 1 on the disk :
+5 0 3 4 5 6
+        Allocated
+File Indexed
+1 ------->0 : 1
+1 ------->3 : 1
+1 ------->4 : 1
+1 ------->5 : 1
+1 ------->6 : 1
+
+Do you want to enter more file(Yes - 1/No - 0)1
+
+Enter the index block: 2
+
+Enter no of blocks needed and no of files for the index 2 on the disk :
+4 2 3 5 6
+        File in the index is already allocated
+
+Enter another file indexed : 7 8 9 10
+        Allocated
+File Indexed
+2 ------->7 : 1
+2 ------->8 : 1
+2 ------->9 : 1
+2 ------->10 : 1
+
+Do you want to enter more file(Yes - 1/No - 0)0
+
+--------------------------------
+Process exited after 49.1 seconds with return value 0
+Press any key to continue . . .
+
+*/
