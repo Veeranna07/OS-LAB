@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
 int f[50], i, st, len, j, c, k, count = 0;
 for(i=0;i<50;i++)
@@ -18,7 +18,7 @@ for(j=st;j<(st+len);j++)
 if(f[j]==0)
 {
 f[j]=1;
-printf("%d\t%d\n",j,f[j]);
+printf("%d--> %d\n",j,f[j]);
 }
 if(j!=(st+len-1))
 printf("\n\tThe file is allocated to disk\n");
@@ -31,4 +31,3 @@ if(c==1)
 goto x;
 getch();
 }
-
