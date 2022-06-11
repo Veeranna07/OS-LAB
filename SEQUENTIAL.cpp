@@ -31,3 +31,36 @@ if(c==1)
 goto x;
 getch();
 }
+
+/*
+
+
+Enter starting block and length of files: 1 3
+1--> 1
+2--> 1
+3--> 1
+
+        The file is allocated to disk
+
+Do you want to enter more file(Yes - 1/No - 0)1
+
+Enter starting block and length of files: 5 2
+5--> 1
+6--> 1
+
+        The file is allocated to disk
+
+Do you want to enter more file(Yes - 1/No - 0)1
+
+Enter starting block and length of files: 4 2
+
+        The file is not allocated
+
+Do you want to enter more file(Yes - 1/No - 0)0
+
+--------------------------------
+Process exited after 15.59 seconds with return value 0
+Press any key to continue . . .
+
+
+*/
