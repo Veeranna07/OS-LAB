@@ -43,3 +43,30 @@ else
 exit(0);
 getch();
 }
+
+/*
+
+
+Enter how many blocks already allocated: 1
+
+Enter blocks already allocated: 1
+
+Enter index starting block and length: 2 4
+        2 ------->1
+        3 ------->1
+        4 ------->1
+        5 ------->1
+
+Do you want to enter more file(Yes - 1/No - 0)1
+
+Enter index starting block and length: 2 4
+
+2 starting block is already allocated
+
+Do you want to enter more file(Yes - 1/No - 0)0
+
+--------------------------------
+Process exited after 15.07 seconds with return value 0
+Press any key to continue . . .
+
+*/
