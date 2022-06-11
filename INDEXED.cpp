@@ -15,7 +15,7 @@ scanf("%d",&n);
 }
 else
 {
-printf("\n%d index is already allocated \n",ind);
+printf("\t%d index is already allocated \n",ind);
 goto x;
 }
 y: count=0;
@@ -29,15 +29,15 @@ if(count==n)
 {
 for(j=0;j<n;j++)
 f[index[j]]=1;
-printf("\t\tAllocated\n");
-printf("\t\tFile Indexed\n");
+printf("\tAllocated\n");
+printf("File Indexed\n");
 for(k=0;k<n;k++)
 printf("%d ------->%d : %d\n",ind,index[k],f[index[k]]);
 }
 else
 {
-printf("\t\tFile in the index is already allocated \n");
-printf("\nEnter another file indexed");
+printf("\tFile in the index is already allocated \n");
+printf("\nEnter another file indexed : ");
 goto y;
 }
 printf("\nDo you want to enter more file(Yes - 1/No - 0)");
